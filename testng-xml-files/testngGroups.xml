@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My Test Suite">
+	<test name="Smoke">
+		<groups>
+			<run>
+				<include name="tier-2" />
+				<include name="tier-1" />
+				<exclude name="tier-3" />
+			</run>
+		</groups>
+		<classes>
+			<class name="selenium.TestNGDependencyGroupExample" />
+		</classes>
+	</test>
+</suite>

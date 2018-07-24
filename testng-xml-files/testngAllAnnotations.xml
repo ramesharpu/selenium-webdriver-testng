@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My suite" parallel="tests" thread-count="1">
+	<test name="Smoke">
+		<parameter name="username" value="Ramesh" />
+		<parameter name="password" value="Test@123" />
+		<parameter name="dummy" value="dummyValue" />
+		<classes>
+			<class name="selenium.TestNGAllAnnotations" />
+		</classes>
+	</test>
+</suite>

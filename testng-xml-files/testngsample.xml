@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="My Test Suite">
+  <test name="Smoke">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="username" value="Ramesh"/>
+    <classes>
+      <class name="selenium.TestNGAllAnnotations"/>
+    </classes>
+  </test> <!-- Smoke -->
+</suite> <!-- My Test Suite -->
